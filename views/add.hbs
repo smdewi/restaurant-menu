@@ -1,0 +1,40 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Add Menu Item</h1>
+<form>
+  <div class="mb-3">
+    <label for="item-name" class="form-label">Item Name</label>
+    <input type="text" class="form-control" id="item-name" placeholder="Enter item name">
+  </div>
+  <div class="mb-3">
+    <label for="item-description" class="form-label">Item Description</label>
+    <input type="text" class="form-control" id="item-description" placeholder="Enter item description">
+  </div>
+  <div class="mb-3">
+    <label for="item-price" class="form-label">Item Price</label>
+    <input type="number" class="form-control" id="item-price">
+  </div>
+    Item Categories:
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="cheesecake" id="cheesecake" checked>
+  <label class="form-check-label" for="Cheesecake">
+    Cheesecake
+  </label>
+    </div>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="appetizers" id="appetizers">
+  <label class="form-check-label" for="Appetizers">
+    Appetizers
+  </label>
+    </div>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="main" id="main">
+  <label class="form-check-label" for="main">
+    Main entre
+  </label>
+    </div>
+  
+  <button type="submit" class="btn btn-success">Add new item</button>
+</form>
+{{/block}}
+{{/extends}}

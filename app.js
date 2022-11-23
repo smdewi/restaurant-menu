@@ -22,6 +22,9 @@ app.get('/menu', (req, res) => {
     res.render("menu");
 });
 
+app.get('/add', (req, res) => {
+    res.render("add");
+});
 
 
 app.listen(PORT, () => console.log("Server started"));
